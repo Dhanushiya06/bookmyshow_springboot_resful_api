@@ -1,6 +1,6 @@
 package com.nesit.bookmyshow._springboot_resful_api.controller;
 
-import com.nesit.bookmyshow._springboot_resful_api.model.User;
+import com.nesit.bookmyshow._springboot_resful_api.model.BookUser;
 import com.nesit.bookmyshow._springboot_resful_api.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -14,18 +14,18 @@ public class UserController {
     private UserService userService;
 
     @PostMapping
-    public void addUser(@RequestBody User user) {
-        userService.addUser(user);
+    public void addUser(@RequestBody BookUser bookUser) {
+        userService.addUser(bookUser);
     }
 
     @GetMapping("/all")
-    public List<User> viewUser() {
+    public List<BookUser> viewUser() {
         return userService.viewUser();
     }
 
     @PutMapping("/{id}")
-    public void updateUser(@PathVariable int id) {
-        userService.updateUser(1);
+    public void updateUser(BookUser bookUser) {
+        userService.updateUser(bookUser);
     }
 
     @DeleteMapping("/{id}")

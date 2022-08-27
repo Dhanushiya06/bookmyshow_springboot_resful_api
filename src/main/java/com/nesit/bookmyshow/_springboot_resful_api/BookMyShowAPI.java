@@ -4,11 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BookmyshowSpringbootResfulApiApplication {
+public class BookMyShowAPI {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(BookmyshowSpringbootResfulApiApplication.class, args);
+		SpringApplication.run(BookMyShowAPI.class, args);
 	}
 
 }

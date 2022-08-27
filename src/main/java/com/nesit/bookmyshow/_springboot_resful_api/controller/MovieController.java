@@ -1,5 +1,6 @@
 package com.nesit.bookmyshow._springboot_resful_api.controller;
 
+import com.nesit.bookmyshow._springboot_resful_api.dto.MovieDto;
 import com.nesit.bookmyshow._springboot_resful_api.model.Movie;
 import com.nesit.bookmyshow._springboot_resful_api.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,6 @@ public class MovieController {
     @PostMapping
     public void addMovie(@RequestBody Movie movie) {
         movieService.addMovie(movie);
-
     }
 
     @GetMapping("/all")
@@ -27,12 +27,16 @@ public class MovieController {
     @PutMapping
     public void updateMovie(@RequestBody Movie movie) {
         movieService.updateMovie(movie);
-
     }
 
     @DeleteMapping("/{id}")
     public void deleteMovie(@PathVariable int id) {
-        movieService.deleteMovie(2);
-
+        movieService.deleteMovie(1);
     }
+
+    @GetMapping("/{id}")
+    public void viewMovie(@PathVariable int id) {
+        movieService.viewMovie(3);
+    }
+
 }

@@ -5,20 +5,21 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.List;
+import java.util.Set;
 
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="user")
-public class User {
+@Table(name = "users")
+public class BookUser {
     @Id
     @GeneratedValue
     private Integer userId;
     private String name;
     private String email;
     private String password;
-    private List<BookingHistory> bookingHistories;
+    @OneToMany(mappedBy = "bookUser", cascade = CascadeType.ALL)
+    private Set<BookingHistory> bookingHistories;
 
 }
