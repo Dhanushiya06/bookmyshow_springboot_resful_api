@@ -1,20 +1,28 @@
 package com.nesit.bookmyshow._springboot_resful_api.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
-@Data
-@AllArgsConstructor
+@Getter
+@Setter
 @NoArgsConstructor
 public class Role {
+
+    public static final String ROLE_USER = "CUSTOMER";
+    public static final String ROLE_ADMIN = "ADMIN";
+
     @Id
-    @GeneratedValue
-    private Integer roleId;
-    private String roleName;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String name;
+
+    @ManyToMany(mappedBy = "roles", cascade = CascadeType.ALL)
+    private Set<BookUser> bookUsers;
+
 }

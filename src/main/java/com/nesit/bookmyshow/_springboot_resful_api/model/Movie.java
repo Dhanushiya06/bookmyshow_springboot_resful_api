@@ -24,9 +24,9 @@ public class Movie {
     private String description;
     @Temporal(TemporalType.DATE)
     private Date date;
-    @ManyToMany(mappedBy = "movie")
+    @ManyToMany(mappedBy = "movie", cascade = CascadeType.ALL)
     private List<Theatre> theatre;
-    @OneToMany(mappedBy = "movie")
+    @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL)
     private List<BookingHistory> bookingHistory;
 
 }

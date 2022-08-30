@@ -15,3 +15,4 @@ public class MovieDto {
     private Date date;
     private Integer theatreId;
 }
+
