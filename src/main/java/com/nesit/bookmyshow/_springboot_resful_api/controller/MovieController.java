@@ -1,6 +1,4 @@
 package com.nesit.bookmyshow._springboot_resful_api.controller;
-
-import com.nesit.bookmyshow._springboot_resful_api.dto.MovieDto;
 import com.nesit.bookmyshow._springboot_resful_api.model.Movie;
 import com.nesit.bookmyshow._springboot_resful_api.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/movie")
+@RequestMapping("api/movieBook")
 public class MovieController {
     @Autowired
     private MovieService movieService;

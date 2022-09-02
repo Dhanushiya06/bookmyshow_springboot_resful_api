@@ -47,7 +47,7 @@ public class SecurityConfig {
                 .authorizeRequests()
                 .antMatchers("/api/admin/**")
                 .hasAnyRole(Role.ROLE_ADMIN)
-                .antMatchers("/api/bookart/**")
+                .antMatchers("/api/movieBook/**")
                 .hasAnyRole(Role.ROLE_ADMIN, Role.ROLE_USER)
                 .anyRequest()
                 .authenticated()

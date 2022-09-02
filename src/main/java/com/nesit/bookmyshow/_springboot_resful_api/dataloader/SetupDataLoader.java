@@ -7,6 +7,7 @@ import com.nesit.bookmyshow._springboot_resful_api.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
+
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
@@ -59,7 +60,8 @@ public class SetupDataLoader implements ApplicationListener<ContextRefreshedEven
     private BookUser createUserIfNotFound(final String name, final Role role) {
         BookUser user = userRepository.findByEmail(name);
         if (user == null) {
-            user = new BookUser(name, bCryptPasswordEncoder.encode("admin"));
+            String encodedPassword = bCryptPasswordEncoder.encode("admin");
+            user = new BookUser(name, encodedPassword);
             user.setRoles(Set.of(role));
             user = userRepository.save(user);
         }

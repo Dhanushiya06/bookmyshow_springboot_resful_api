@@ -21,9 +21,9 @@ public class MovieService {
         movieRepository.save(movie);
     }
 
-    public List<Movie> viewMovie() {
+    public List<Movie>viewMovie() {
 
-        return null;
+        return movieRepository.findAll();
     }
 
     public void viewMovie(int id) {

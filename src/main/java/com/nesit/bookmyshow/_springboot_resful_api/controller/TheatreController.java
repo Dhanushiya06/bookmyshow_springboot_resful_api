@@ -1,7 +1,6 @@
 package com.nesit.bookmyshow._springboot_resful_api.controller;
 
 import com.nesit.bookmyshow._springboot_resful_api.model.Theatre;
-import com.nesit.bookmyshow._springboot_resful_api.repository.TheatreRepository;
 import com.nesit.bookmyshow._springboot_resful_api.service.MovieService;
 import com.nesit.bookmyshow._springboot_resful_api.service.TheatreService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/theatre")
+@RequestMapping("/api/theatre")
 public class TheatreController {
     @Autowired
     private TheatreService theatreService;

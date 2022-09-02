@@ -1,6 +1,5 @@
 package com.nesit.bookmyshow._springboot_resful_api.model;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
