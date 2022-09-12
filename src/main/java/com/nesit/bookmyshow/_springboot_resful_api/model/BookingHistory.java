@@ -21,8 +21,6 @@ BookingHistory {
     @Id
     @GeneratedValue
     private Integer id;
-    private Date date;
-    private Integer noOfTickets;
 
     @ManyToOne
     @JoinColumn(name = "movie_id", referencedColumnName = "movieId")
@@ -31,5 +29,9 @@ BookingHistory {
     @ManyToOne
     @JoinColumn(name = "user_id", referencedColumnName = "userId")
     private BookUser bookUser;
+
+    @ManyToOne
+    @JoinColumn(name = "theatre_id", referencedColumnName = "theatreId")
+    private Theatre theatre;
 }
 

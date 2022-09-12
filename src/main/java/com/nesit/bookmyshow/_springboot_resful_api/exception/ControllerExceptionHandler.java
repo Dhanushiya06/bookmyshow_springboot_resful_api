@@ -2,6 +2,9 @@ package com.nesit.bookmyshow._springboot_resful_api.exception;
 
 import com.nesit.bookmyshow._springboot_resful_api.response.APIResponse;
 import com.nesit.bookmyshow._springboot_resful_api.response.ErrorResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -12,45 +15,55 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @ControllerAdvice
 public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
 
-    private APIResponse apiResponse;
+    private static final Logger LOGGER = LoggerFactory.getLogger(ControllerExceptionHandler.class);
 
-    public ControllerExceptionHandler() {
-        this.apiResponse = new APIResponse();
-    }
+
+    @Autowired
+    private APIResponse apiResponse;
 
     @ExceptionHandler(ResourceNotFoundException.class)
     public ResponseEntity<APIResponse> resourceNotFoundException(ResourceNotFoundException ex, WebRequest request) {
-        ErrorResponse message = new ErrorResponse(
-                ex.getMessage(),
-                request.getDescription(false));
-        apiResponse.setStatus(HttpStatus.NOT_FOUND.value());
-        apiResponse.setError(message);
-        return new ResponseEntity<>(apiResponse, HttpStatus.NOT_FOUND);
+        apiResponse = errorResponseBuilder(ex.getMessage(), request);
+        return new ResponseEntity<>(apiResponse, HttpStatus.OK);
     }
 
-    @ExceptionHandler(UserExistException.class)
-    public ResponseEntity<APIResponse> userExistException(UserExistException ex, WebRequest request) {
-        ErrorResponse message = new ErrorResponse(
-                ex.getMessage(),
-                request.getDescription(false));
+    @ExceptionHandler(ResourceAlreadyExistException.class)
+    public ResponseEntity<APIResponse> userExistException(ResourceAlreadyExistException ex, WebRequest request) {
+        apiResponse = errorResponseBuilder(ex.getMessage(), request);
 
-        apiResponse.setStatus(HttpStatus.NOT_FOUND.value());
-        apiResponse.setError(message);
+        return new ResponseEntity<>(apiResponse, HttpStatus.OK);
+    }
 
-        System.out.println(apiResponse.toString());
+    @ExceptionHandler(UnableToInsertException.class)
+    public ResponseEntity<APIResponse> unableToInsertException(ResourceAlreadyExistException ex, WebRequest request) {
+        apiResponse = errorResponseBuilder(ex.getMessage(), request);
 
-        return new ResponseEntity<>(apiResponse, HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(apiResponse, HttpStatus.OK);
+    }
+
+    @ExceptionHandler(UnableToUpdateException.class)
+    public ResponseEntity<APIResponse> unableToUpdateException(ResourceAlreadyExistException ex, WebRequest request) {
+        apiResponse = errorResponseBuilder(ex.getMessage(), request);
+
+        return new ResponseEntity<>(apiResponse, HttpStatus.OK);
     }
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<APIResponse> globalExceptionHandler(Exception ex, WebRequest request) {
-        ErrorResponse message = new ErrorResponse(
-                ex.getMessage(),
-                request.getDescription(false));
+        apiResponse = errorResponseBuilder(ex.getMessage(), request);
 
+        return new ResponseEntity<>(apiResponse, HttpStatus.OK);
+    }
+
+    private APIResponse errorResponseBuilder(String ex, WebRequest request) {
+        ErrorResponse message = new ErrorResponse(
+                ex, request.getDescription(false));
         apiResponse.setStatus(HttpStatus.NOT_FOUND.value());
         apiResponse.setError(message);
 
-        return new ResponseEntity<>(apiResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+        LOGGER.error(message.getMessage());
+
+        return apiResponse;
     }
+
 }

@@ -17,27 +17,28 @@ import java.util.List;
 import java.util.Set;
 
 @Service
-public class BookMyShowUserDetailsService implements UserDetailsService {
+public class BookUserDetailsService implements UserDetailsService {
 
     @Autowired
     private UserRepository userRepository;
 
     @Override
     @Transactional
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        BookUser user = userRepository.findByEmail(username);
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+        BookUser user = userRepository.findByEmail(email);
         if (user != null) {
             return new User(user.getEmail(), user.getPassword(), buildSimpleGrantedAuthorities(user.getRoles()));
         } else {
-            throw new UsernameNotFoundException("User not found with username: " + username);
+            throw new UsernameNotFoundException("User not found with username: " + email);
         }
     }
 
     private static List<SimpleGrantedAuthority> buildSimpleGrantedAuthorities(final Set<Role> roles) {
         List<SimpleGrantedAuthority> authorities = new ArrayList<>();
         for (Role role : roles) {
-            authorities.add(new SimpleGrantedAuthority("ROLE_" +role.getName()));
+            authorities.add(new SimpleGrantedAuthority("ROLE_" + role.getName()));
         }
         return authorities;
     }
+
 }

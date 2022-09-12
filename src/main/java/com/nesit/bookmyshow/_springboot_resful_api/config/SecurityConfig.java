@@ -1,7 +1,7 @@
 package com.nesit.bookmyshow._springboot_resful_api.config;
 
 import com.nesit.bookmyshow._springboot_resful_api.model.Role;
-import com.nesit.bookmyshow._springboot_resful_api.service.BookMyShowUserDetailsService;
+import com.nesit.bookmyshow._springboot_resful_api.service.BookUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -17,7 +17,6 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true, jsr250Enabled = true)
 public class SecurityConfig {
-
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
@@ -25,7 +24,7 @@ public class SecurityConfig {
 
     @Bean
     public UserDetailsService userDetailsService() {
-        return new BookMyShowUserDetailsService();
+        return new BookUserDetailsService();
     }
 
     @Bean
@@ -43,17 +42,12 @@ public class SecurityConfig {
                 .authorizeRequests()
                 .antMatchers("/api/auth/**")
                 .permitAll()
-                .and()
-                .authorizeRequests()
-                .antMatchers("/api/admin/**")
-                .hasAnyRole(Role.ROLE_ADMIN)
-                .antMatchers("/api/movieBook/**")
-                .hasAnyRole(Role.ROLE_ADMIN, Role.ROLE_USER)
-                .anyRequest()
-                .authenticated()
+//                .and()
+//                .authorizeRequests()
+//                .anyRequest()
+//                .authenticated()
                 .and().httpBasic()
                 .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-
 
         httpSecurity.authenticationProvider(authenticationProvider());
 

@@ -13,8 +13,10 @@ import java.util.Set;
 @NoArgsConstructor
 public class Role {
 
-    public static final String ROLE_USER = "CUSTOMER";
-    public static final String ROLE_ADMIN = "ADMIN";
+    public static final String USER = "CUSTOMER";
+    public static final String ROLE_USER = "ROLE_CUSTOMER";
+    public static final String ADMIN = "ADMIN";
+    public static final String ROLE_ADMIN = "ROLE_ADMIN";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

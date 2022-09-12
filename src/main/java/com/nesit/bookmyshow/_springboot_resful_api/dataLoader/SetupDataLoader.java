@@ -1,4 +1,4 @@
-package com.nesit.bookmyshow._springboot_resful_api.dataloader;
+package com.nesit.bookmyshow._springboot_resful_api.dataLoader;
 
 import com.nesit.bookmyshow._springboot_resful_api.model.BookUser;
 import com.nesit.bookmyshow._springboot_resful_api.model.Role;
@@ -7,7 +7,6 @@ import com.nesit.bookmyshow._springboot_resful_api.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
-
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
@@ -36,8 +35,8 @@ public class SetupDataLoader implements ApplicationListener<ContextRefreshedEven
         }
 
         // Create user roles
-        Role userRole = createRoleIfNotFound(Role.ROLE_USER);
-        Role adminRole = createRoleIfNotFound(Role.ROLE_ADMIN);
+        Role userRole = createRoleIfNotFound(Role.USER);
+        Role adminRole = createRoleIfNotFound(Role.ADMIN);
 
         // Create users
         createUserIfNotFound("admin@admin.com", adminRole);
@@ -57,14 +56,14 @@ public class SetupDataLoader implements ApplicationListener<ContextRefreshedEven
     }
 
     @Transactional
-    private BookUser createUserIfNotFound(final String name, final Role role) {
-        BookUser user = userRepository.findByEmail(name);
+    private BookUser createUserIfNotFound(final String email, final Role role) {
+        BookUser user = userRepository.findByEmail(email);
         if (user == null) {
-            String encodedPassword = bCryptPasswordEncoder.encode("admin");
-            user = new BookUser(name, encodedPassword);
+            user = new BookUser(email, bCryptPasswordEncoder.encode("admin"));
             user.setRoles(Set.of(role));
             user = userRepository.save(user);
         }
         return user;
     }
 }
+

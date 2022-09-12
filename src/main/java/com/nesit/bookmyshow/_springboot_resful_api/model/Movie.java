@@ -1,5 +1,6 @@
 package com.nesit.bookmyshow._springboot_resful_api.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -17,14 +18,17 @@ public class Movie {
     @GeneratedValue
     private Integer movieId;
     private String movieName;
-    private Integer availableTickets;
     private Integer price;
     private String image;
     private String description;
     @Temporal(TemporalType.DATE)
     private Date date;
+
+    @JsonIgnore
     @ManyToMany(mappedBy = "movie", cascade = CascadeType.ALL)
     private List<Theatre> theatre;
+
+    @JsonIgnore
     @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL)
     private List<BookingHistory> bookingHistory;
 

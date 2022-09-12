@@ -21,6 +21,7 @@ public class BookUser {
     private String email;
     private String password;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "bookUser", cascade = CascadeType.ALL)
     private Set<BookingHistory> bookingHistories;
 
@@ -35,4 +36,5 @@ public class BookUser {
         this.email = email;
         this.password = password;
     }
+
 }
