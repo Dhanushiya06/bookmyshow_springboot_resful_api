@@ -1,0 +1,415 @@
+2022-09-13 10:29:56 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 17704 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 10:29:56 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 10:29:58 - INFO - Starting service [Tomcat]
+2022-09-13 10:29:58 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 10:29:58 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 10:29:58 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 10:29:58 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 10:29:58 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 10:29:58 - INFO - HikariPool-1 - Starting...
+2022-09-13 10:29:58 - INFO - HikariPool-1 - Start completed.
+2022-09-13 10:29:59 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 10:29:59 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 10:30:00 - INFO - Started BookMyShowAPI in 4.271 seconds (JVM running for 4.719)
+2022-09-13 10:30:01 - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 11:29:37 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m37s975ms245µs).
+2022-09-13 11:45:56 - ERROR - Theatre already exists.
+2022-09-13 11:45:58 - ERROR - Theatre already exists.
+2022-09-13 11:46:07 - ERROR - Theatre already exists.
+2022-09-13 11:46:08 - ERROR - Theatre already exists.
+2022-09-13 11:46:08 - ERROR - Theatre already exists.
+2022-09-13 11:46:08 - ERROR - Theatre already exists.
+2022-09-13 11:46:08 - ERROR - Theatre already exists.
+2022-09-13 11:46:08 - ERROR - Theatre already exists.
+2022-09-13 11:46:08 - ERROR - Theatre already exists.
+2022-09-13 11:57:46 - ERROR - Theatre already exists.
+2022-09-13 12:09:35 - ERROR - Theatre already exists.
+2022-09-13 12:09:36 - ERROR - Theatre already exists.
+2022-09-13 12:54:54 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m14s812ms684µs900ns).
+2022-09-13 13:01:02 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m37s851ms99µs700ns).
+2022-09-13 13:31:17 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m14s749ms761µs400ns).
+2022-09-13 14:02:57 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m39s732ms283µs900ns).
+2022-09-13 14:19:24 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m27s399ms303µs500ns).
+2022-09-13 14:23:23 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 14:23:23 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 14:23:33 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 388 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 14:23:33 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 14:23:35 - INFO - Starting service [Tomcat]
+2022-09-13 14:23:35 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 14:23:35 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 14:23:35 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 14:23:35 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 14:23:35 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 14:23:35 - INFO - HikariPool-1 - Starting...
+2022-09-13 14:23:36 - INFO - HikariPool-1 - Start completed.
+2022-09-13 14:23:36 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 14:23:36 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 14:23:37 - INFO - Started BookMyShowAPI in 4.587 seconds (JVM running for 5.02)
+2022-09-13 14:26:25 - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 14:26:25 - ERROR - Cannot invoke "com.nesit.bookmyshow._springboot_resful_api.repository.MovieRepository.findById(Object)" because "this.movieRepository" is null
+2022-09-13 14:32:09 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 14:32:09 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 14:32:17 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 17444 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 14:32:17 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 14:32:18 - INFO - Starting service [Tomcat]
+2022-09-13 14:32:18 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 14:32:19 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 14:32:19 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 14:32:19 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 14:32:19 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 14:32:19 - INFO - HikariPool-1 - Starting...
+2022-09-13 14:32:19 - INFO - HikariPool-1 - Start completed.
+2022-09-13 14:32:19 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 14:32:20 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 14:32:21 - INFO - Started BookMyShowAPI in 4.198 seconds (JVM running for 4.572)
+2022-09-13 14:36:31 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 14:36:31 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 14:36:39 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 18960 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 14:36:39 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 14:36:41 - INFO - Starting service [Tomcat]
+2022-09-13 14:36:41 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 14:36:41 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 14:36:41 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 14:36:41 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 14:36:41 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 14:36:41 - INFO - HikariPool-1 - Starting...
+2022-09-13 14:36:41 - INFO - HikariPool-1 - Start completed.
+2022-09-13 14:36:41 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 14:36:42 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 14:36:43 - INFO - Started BookMyShowAPI in 4.233 seconds (JVM running for 4.595)
+2022-09-13 14:36:56 - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 14:36:56 - ERROR - Theatre does not exist with id 17
+2022-09-13 14:37:07 - ERROR - class java.util.ArrayList cannot be cast to class com.nesit.bookmyshow._springboot_resful_api.model.BookingHistory (java.util.ArrayList is in module java.base of loader 'bootstrap'; com.nesit.bookmyshow._springboot_resful_api.model.BookingHistory is in unnamed module of loader 'app')
+2022-09-13 14:38:43 - ERROR - class java.util.ArrayList cannot be cast to class com.nesit.bookmyshow._springboot_resful_api.model.BookingHistory (java.util.ArrayList is in module java.base of loader 'bootstrap'; com.nesit.bookmyshow._springboot_resful_api.model.BookingHistory is in unnamed module of loader 'app')
+2022-09-13 14:38:45 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 14:38:45 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 14:38:55 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 9532 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 14:38:55 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 14:38:56 - INFO - Starting service [Tomcat]
+2022-09-13 14:38:56 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 14:38:56 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 14:38:57 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 14:38:57 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 14:38:57 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 14:38:57 - INFO - HikariPool-1 - Starting...
+2022-09-13 14:38:57 - INFO - HikariPool-1 - Start completed.
+2022-09-13 14:38:57 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 14:38:58 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 14:38:59 - INFO - Started BookMyShowAPI in 4.636 seconds (JVM running for 5.076)
+2022-09-13 14:39:37 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 14:39:37 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 14:39:46 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 20740 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 14:39:46 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 14:39:47 - INFO - Starting service [Tomcat]
+2022-09-13 14:39:47 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 14:39:47 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 14:39:47 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 14:39:47 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 14:39:47 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 14:39:48 - INFO - HikariPool-1 - Starting...
+2022-09-13 14:39:48 - INFO - HikariPool-1 - Start completed.
+2022-09-13 14:39:48 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 14:39:48 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 14:39:49 - INFO - Started BookMyShowAPI in 4.263 seconds (JVM running for 4.637)
+2022-09-13 14:39:56 - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 14:45:09 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 14:45:09 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 14:45:18 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 7792 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 14:45:18 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 14:45:20 - INFO - Starting service [Tomcat]
+2022-09-13 14:45:20 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 14:45:20 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 14:45:20 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 14:45:20 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 14:45:20 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 14:45:20 - INFO - HikariPool-1 - Starting...
+2022-09-13 14:45:21 - INFO - HikariPool-1 - Start completed.
+2022-09-13 14:45:21 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 14:45:21 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 14:45:23 - INFO - Started BookMyShowAPI in 4.495 seconds (JVM running for 4.85)
+2022-09-13 14:45:42 - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 14:46:43 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 14:46:43 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 14:46:53 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 16544 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 14:46:53 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 14:46:55 - INFO - Starting service [Tomcat]
+2022-09-13 14:46:55 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 14:46:55 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 14:46:55 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 14:46:55 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 14:46:55 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 14:46:55 - INFO - HikariPool-1 - Starting...
+2022-09-13 14:46:55 - INFO - HikariPool-1 - Start completed.
+2022-09-13 14:46:55 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 14:46:56 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 14:46:58 - INFO - Started BookMyShowAPI in 6.133 seconds (JVM running for 6.594)
+2022-09-13 14:46:59 - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 14:47:21 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 14:47:21 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 14:47:30 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 8596 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 14:47:30 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 14:47:31 - INFO - Starting service [Tomcat]
+2022-09-13 14:47:31 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 14:47:31 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 14:47:31 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 14:47:31 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 14:47:31 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 14:47:32 - INFO - HikariPool-1 - Starting...
+2022-09-13 14:47:32 - INFO - HikariPool-1 - Start completed.
+2022-09-13 14:47:32 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 14:47:32 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 14:47:33 - INFO - Started BookMyShowAPI in 4.283 seconds (JVM running for 4.654)
+2022-09-13 14:47:53 - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 16:02:50 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 16:02:50 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 16:04:44 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 10524 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 16:04:44 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 16:04:45 - INFO - Starting service [Tomcat]
+2022-09-13 16:04:45 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 16:04:46 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 16:04:46 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 16:04:46 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 16:04:46 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 16:04:46 - INFO - HikariPool-1 - Starting...
+2022-09-13 16:04:46 - INFO - HikariPool-1 - Start completed.
+2022-09-13 16:04:46 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 16:04:47 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 16:04:48 - INFO - Started BookMyShowAPI in 4.816 seconds (JVM running for 5.209)
+2022-09-13 16:05:21 - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 18:04:54 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h39m6s981ms251µs500ns).
+2022-09-13 18:36:04 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 18:36:04 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 18:36:14 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 5504 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 18:36:14 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 18:36:17 - INFO - Starting service [Tomcat]
+2022-09-13 18:36:17 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 18:36:17 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 18:36:18 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 18:36:18 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 18:36:18 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 18:36:18 - INFO - HikariPool-1 - Starting...
+2022-09-13 18:36:19 - INFO - HikariPool-1 - Start completed.
+2022-09-13 18:36:19 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 18:36:20 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 18:36:22 - INFO - Started BookMyShowAPI in 8.808 seconds (JVM running for 9.48)
+2022-09-13 18:36:35 - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 18:45:27 - ERROR - USer does not exists 
+2022-09-13 18:45:28 - ERROR - USer does not exists 
+2022-09-13 18:45:31 - ERROR - USer does not exists 
+2022-09-13 18:47:50 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 18:47:50 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 18:47:53 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 21720 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 18:47:53 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 18:47:54 - INFO - Starting service [Tomcat]
+2022-09-13 18:47:54 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 18:47:54 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 18:47:55 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 18:47:55 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 18:47:55 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 18:47:55 - INFO - HikariPool-1 - Starting...
+2022-09-13 18:47:55 - INFO - HikariPool-1 - Start completed.
+2022-09-13 18:47:55 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 18:47:56 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 18:47:57 - INFO - Started BookMyShowAPI in 4.527 seconds (JVM running for 4.877)
+2022-09-13 18:48:04 - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 18:58:33 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 18:58:33 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 19:01:12 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 18280 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 19:01:12 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 19:01:13 - INFO - Starting service [Tomcat]
+2022-09-13 19:01:13 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 19:01:13 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 19:01:14 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 19:01:14 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 19:01:14 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 19:01:14 - INFO - HikariPool-1 - Starting...
+2022-09-13 19:01:14 - INFO - HikariPool-1 - Start completed.
+2022-09-13 19:01:14 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 19:01:14 - ERROR - Failed to initialize JPA EntityManagerFactory: Unknown mappedBy in: com.nesit.bookmyshow._springboot_resful_api.model.File.movie, referenced property unknown: com.nesit.bookmyshow._springboot_resful_api.model.Movie.file
+2022-09-13 19:01:14 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 19:01:14 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 19:01:14 - INFO - Stopping service [Tomcat]
+2022-09-13 19:01:14 - ERROR - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Unknown mappedBy in: com.nesit.bookmyshow._springboot_resful_api.model.File.movie, referenced property unknown: com.nesit.bookmyshow._springboot_resful_api.model.Movie.file
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.nesit.bookmyshow._springboot_resful_api.BookMyShowAPI.main(BookMyShowAPI.java:11)
+Caused by: org.hibernate.AnnotationException: Unknown mappedBy in: com.nesit.bookmyshow._springboot_resful_api.model.File.movie, referenced property unknown: com.nesit.bookmyshow._springboot_resful_api.model.Movie.file
+	at org.hibernate.cfg.OneToOneSecondPass.doSecondPass(OneToOneSecondPass.java:170)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1653)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1629)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+2022-09-13 19:02:14 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 20848 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 19:02:14 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 19:02:16 - INFO - Starting service [Tomcat]
+2022-09-13 19:02:16 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 19:02:16 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 19:02:16 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 19:02:16 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 19:02:16 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 19:02:16 - INFO - HikariPool-1 - Starting...
+2022-09-13 19:02:16 - INFO - HikariPool-1 - Start completed.
+2022-09-13 19:02:16 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 19:02:17 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 19:02:18 - INFO - Started BookMyShowAPI in 3.526 seconds (JVM running for 3.839)
+2022-09-13 19:16:02 - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 19:16:02 - ERROR - Current request is not a multipart request
+2022-09-13 19:22:39 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 19:22:39 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 19:22:42 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 21224 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 19:22:42 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 19:22:43 - INFO - Starting service [Tomcat]
+2022-09-13 19:22:43 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 19:22:43 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 19:22:43 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 19:22:43 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 19:22:43 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 19:22:43 - INFO - HikariPool-1 - Starting...
+2022-09-13 19:22:44 - INFO - HikariPool-1 - Start completed.
+2022-09-13 19:22:44 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 19:22:44 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 19:22:45 - INFO - Started BookMyShowAPI in 3.978 seconds (JVM running for 4.351)
+2022-09-13 19:23:04 - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 19:25:50 - ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.security.web.firewall.RequestRejectedException: The request was rejected because the URL contained a potentially malicious String "//"
+	at org.springframework.security.web.firewall.StrictHttpFirewall.rejectedBlocklistedUrls(StrictHttpFirewall.java:535)
+	at org.springframework.security.web.firewall.StrictHttpFirewall.getFirewalledRequest(StrictHttpFirewall.java:505)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:206)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-13 19:26:03 - ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.security.web.firewall.RequestRejectedException: The request was rejected because the URL contained a potentially malicious String "//"
+	at org.springframework.security.web.firewall.StrictHttpFirewall.rejectedBlocklistedUrls(StrictHttpFirewall.java:535)
+	at org.springframework.security.web.firewall.StrictHttpFirewall.getFirewalledRequest(StrictHttpFirewall.java:505)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:206)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-13 19:29:17 - ERROR - Movie already exists.
+2022-09-13 19:29:35 - ERROR - Movie already exists.
+2022-09-13 19:40:36 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 19:40:36 - INFO - HikariPool-1 - Shutdown completed.
+2022-09-13 19:40:41 - INFO - Starting BookMyShowAPI using Java 18.0.2 on DELL-76F8DL3 with PID 14492 (D:\Project\bookmyshow_springboot_resful_api\target\classes started by Administrator in D:\Project\bookmyshow_springboot_resful_api)
+2022-09-13 19:40:41 - INFO - No active profile set, falling back to 1 default profile: "default"
+2022-09-13 19:40:42 - INFO - Starting service [Tomcat]
+2022-09-13 19:40:42 - INFO - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 19:40:42 - INFO - Initializing Spring embedded WebApplicationContext
+2022-09-13 19:40:42 - INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 19:40:42 - INFO - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 19:40:42 - INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 19:40:43 - INFO - HikariPool-1 - Starting...
+2022-09-13 19:40:43 - INFO - HikariPool-1 - Start completed.
+2022-09-13 19:40:43 - INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-09-13 19:40:43 - INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 19:40:44 - INFO - Started BookMyShowAPI in 3.444 seconds (JVM running for 3.759)
+2022-09-13 19:40:51 - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 19:40:51 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 19:41:26 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 19:42:15 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 19:42:38 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 19:47:13 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 19:47:46 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 19:50:43 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 19:51:04 - ERROR - 
+2022-09-13 19:57:39 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 19:57:41 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 19:57:42 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 19:57:42 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 19:57:42 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 20:04:35 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 20:04:38 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 20:04:39 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 20:10:59 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 20:11:02 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 20:13:03 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2022-09-13 20:18:14 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m201ms406µs300ns).
+2022-09-13 20:34:22 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m8s441ms770µs900ns).
+2022-09-13 20:40:34 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m41s307ms775µs600ns).
+2022-09-13 22:38:33 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h54m29s482ms15µs400ns).
+2022-09-13 22:40:58 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-13 22:40:58 - INFO - HikariPool-1 - Shutdown completed.
