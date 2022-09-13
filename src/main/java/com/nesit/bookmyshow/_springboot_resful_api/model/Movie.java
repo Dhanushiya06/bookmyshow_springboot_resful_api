@@ -24,6 +24,10 @@ public class Movie {
     @Temporal(TemporalType.DATE)
     private Date date;
 
+    @OneToOne
+    @JoinColumn(name = "file_id", referencedColumnName = "id")
+    private File file;
+
     @JsonIgnore
     @ManyToMany(mappedBy = "movie", cascade = CascadeType.ALL)
     private List<Theatre> theatre;

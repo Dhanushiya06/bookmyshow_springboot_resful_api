@@ -6,9 +6,11 @@ import com.nesit.bookmyshow._springboot_resful_api.model.BookUser;
 import com.nesit.bookmyshow._springboot_resful_api.model.Role;
 import com.nesit.bookmyshow._springboot_resful_api.repository.RoleRepository;
 import com.nesit.bookmyshow._springboot_resful_api.repository.UserRepository;
+import com.nesit.bookmyshow._springboot_resful_api.response.AuthResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+
 import java.util.Set;
 
 @Service
@@ -33,12 +35,17 @@ public class BookUserService {
         return userRepository.save(bookUser);
     }
 
-    public BookUser loginAsCustomer(BookUser bookUser) {
+    public AuthResponse loginAsCustomer(BookUser bookUser) {
         BookUser user = userRepository.findByEmail(bookUser.getEmail());
         if (user != null && bCryptPasswordEncoder.matches(bookUser.getPassword(), user.getPassword())) {
-            return user;
+            AuthResponse authResponse = new AuthResponse();
+            authResponse.setName(user.getName());
+            authResponse.setRole(user.getRoles().iterator().next().getName());
+            authResponse.setUserId(user.getUserId());
+            authResponse.setEmail(user.getEmail());
+            return authResponse;
         }
-         throw new ResourceNotFoundException("USer does not exists ");
+        throw new ResourceNotFoundException("USer does not exists ");
     }
 }
 

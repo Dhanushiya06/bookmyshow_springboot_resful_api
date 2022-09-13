@@ -4,6 +4,7 @@ import com.nesit.bookmyshow._springboot_resful_api.model.Movie;
 import com.nesit.bookmyshow._springboot_resful_api.model.Role;
 import com.nesit.bookmyshow._springboot_resful_api.request.MovieRequest;
 import com.nesit.bookmyshow._springboot_resful_api.response.APIResponse;
+import com.nesit.bookmyshow._springboot_resful_api.response.BookingHistoryResponse;
 import com.nesit.bookmyshow._springboot_resful_api.response.SuccessResponse;
 import com.nesit.bookmyshow._springboot_resful_api.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +27,8 @@ public class MovieController {
 
 //    @Secured({Role.ROLE_ADMIN})
     @PostMapping
-    public ResponseEntity<APIResponse> addMovie(@RequestBody Movie movie) {
-        Movie addedMovie = movieService.addMovie(movie);
+    public ResponseEntity<APIResponse> addMovie(@RequestBody MovieRequest movieRequest) {
+        Movie addedMovie = movieService.addMovie(movieRequest);
         apiResponse.setStatus(HttpStatus.CREATED.value());
         apiResponse.setData(addedMovie);
         return new ResponseEntity<>(apiResponse, HttpStatus.CREATED);
@@ -54,7 +55,8 @@ public class MovieController {
 //    @Secured({Role.ROLE_ADMIN, Role.ROLE_USER})
     @GetMapping("/all")
     public ResponseEntity<APIResponse> viewAllMovies() {
-        List<Movie> movies = movieService.viewAllMovies();
+        List<BookingHistoryResponse> movies = movieService.viewAllMovies();
+//        List<Movie> movies = movieService.viewAllMovies();
         apiResponse.setStatus(HttpStatus.OK.value());
         apiResponse.setData(movies);
         return new ResponseEntity<>(apiResponse, HttpStatus.CREATED);

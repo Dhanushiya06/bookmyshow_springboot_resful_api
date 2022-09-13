@@ -1,6 +1,7 @@
 package com.nesit.bookmyshow._springboot_resful_api.controller;
 
 import com.nesit.bookmyshow._springboot_resful_api.model.BookingHistory;
+import com.nesit.bookmyshow._springboot_resful_api.request.HistoryRequest;
 import com.nesit.bookmyshow._springboot_resful_api.response.APIResponse;
 import com.nesit.bookmyshow._springboot_resful_api.response.BookingHistoryResponse;
 import com.nesit.bookmyshow._springboot_resful_api.service.BookingHistoryService;
@@ -28,6 +29,7 @@ public class BookingHistoryController {
         apiResponse.setData(bookingHistories);
         return new ResponseEntity<>(apiResponse, HttpStatus.CREATED);
     }
+
     @GetMapping("/{id}")
     public ResponseEntity<APIResponse> viewBookingHistoryById(@PathVariable Integer id) {
         List<BookingHistoryResponse> bookingHistories = bookingHistoryService.viewBookingHistoryById(id);
@@ -36,4 +38,11 @@ public class BookingHistoryController {
         return new ResponseEntity<>(apiResponse, HttpStatus.CREATED);
     }
 
+    @PostMapping
+    public ResponseEntity<APIResponse> addToHistory(@RequestBody HistoryRequest historyRequest) {
+        List<BookingHistoryResponse> bookingHistoryResponses= bookingHistoryService.addToHistory(historyRequest);
+        apiResponse.setStatus(HttpStatus.CREATED.value());
+        apiResponse.setData(bookingHistoryResponses);
+        return new ResponseEntity<>(apiResponse, HttpStatus.CREATED);
+    }
 }

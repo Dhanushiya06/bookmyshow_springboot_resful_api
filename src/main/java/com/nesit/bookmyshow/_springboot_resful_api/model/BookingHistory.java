@@ -14,13 +14,11 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "bookingHistory")
-public class
-
-
-BookingHistory {
+public class BookingHistory {
     @Id
     @GeneratedValue
     private Integer id;
+    private Integer tickets;
 
     @ManyToOne
     @JoinColumn(name = "movie_id", referencedColumnName = "movieId")

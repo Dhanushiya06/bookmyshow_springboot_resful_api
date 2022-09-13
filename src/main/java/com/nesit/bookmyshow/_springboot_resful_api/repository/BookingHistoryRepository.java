@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface BookingHistoryRepository extends JpaRepository<BookingHistory, Integer> {
     List<BookingHistory> findByBookUser(BookUser bookUser);
 }
