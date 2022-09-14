@@ -796,3 +796,10 @@ org.hibernate.HibernateException: More than one row with the given identifier wa
 2022-09-14 14:09:23 - ERROR - null
 2022-09-14 14:09:36 - ERROR - The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
 2022-09-14 14:27:58 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s326ms829µs900ns).
+2022-09-14 14:51:13 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m44s456ms853µs400ns).
+2022-09-14 16:18:53 - ERROR - file does not exist
+2022-09-14 16:18:55 - ERROR - file does not exist
+2022-09-14 16:57:50 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m4s996ms737µs400ns).
+2022-09-14 17:45:23 - WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s320ms428µs800ns).
+2022-09-14 17:56:28 - INFO - HikariPool-1 - Shutdown initiated...
+2022-09-14 17:56:28 - INFO - HikariPool-1 - Shutdown completed.
