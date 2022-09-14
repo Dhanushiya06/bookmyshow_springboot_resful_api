@@ -45,7 +45,7 @@ public class BookUserService {
             authResponse.setEmail(user.getEmail());
             return authResponse;
         }
-        throw new ResourceNotFoundException("USer does not exists ");
+        throw new ResourceNotFoundException("User does not exists ");
     }
 }
 

@@ -19,6 +19,7 @@ public class Movie {
     private Integer movieId;
     private String movieName;
     private Integer price;
+    @JsonIgnore
     private String image;
     private String description;
     @Temporal(TemporalType.DATE)

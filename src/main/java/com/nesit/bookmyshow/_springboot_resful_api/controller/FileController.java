@@ -7,6 +7,7 @@ import com.nesit.bookmyshow._springboot_resful_api.service.FileService;
 import com.nesit.bookmyshow._springboot_resful_api.service.MovieService;
 import com.nesit.bookmyshow._springboot_resful_api.utils.FileDownloadUtil;
 import com.nesit.bookmyshow._springboot_resful_api.utils.FileUploadUtil;
+import com.nesit.bookmyshow._springboot_resful_api.utils.ImageUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -38,29 +39,31 @@ public class FileController {
     public ResponseEntity<APIResponse> uploadFile(
             @RequestParam("file") MultipartFile multipartFile)
             throws IOException {
+//
+//        String fileName = StringUtils.cleanPath(Objects.requireNonNull(multipartFile.getOriginalFilename()));
+//        long size = multipartFile.getSize();
+//
+//        String filecode = FileUploadUtil.saveFile(fileName, multipartFile);
+//
+//        FileUploadResponse response = new FileUploadResponse();
+//        response.setFileName(fileName);
+//        response.setSize(size);
+//        response.setDownloadUri("/downloadFile/" + filecode);
+//
+//        FileDownloadUtil downloadUtil = new FileDownloadUtil();
+//        Resource resource = null;
+//        try {
+//            resource = downloadUtil.getFileAsResource(filecode);
+//        } catch (IOException e) {
+//            return ResponseEntity.internalServerError().build();
+//        }
+//
+           File file = new File();
+//        file.setLocation(FileUploadUtil.getFilePath(fileName) + "/" + resource.getFilename());
+//        file = fileService.uploadFile(file);
 
-        String fileName = StringUtils.cleanPath(Objects.requireNonNull(multipartFile.getOriginalFilename()));
-        long size = multipartFile.getSize();
-
-        String filecode = FileUploadUtil.saveFile(fileName, multipartFile);
-
-        FileUploadResponse response = new FileUploadResponse();
-        response.setFileName(fileName);
-        response.setSize(size);
-        response.setDownloadUri("/downloadFile/" + filecode);
-
-        FileDownloadUtil downloadUtil = new FileDownloadUtil();
-        Resource resource = null;
-        try {
-            resource = downloadUtil.getFileAsResource(filecode);
-        } catch (IOException e) {
-            return ResponseEntity.internalServerError().build();
-        }
-
-        File file = new File();
-        file.setLocation(FileUploadUtil.getFilePath(fileName) + "/" + resource.getFilename());
+        file.setImage(ImageUtility.compressImage(multipartFile.getBytes()));
         file = fileService.uploadFile(file);
-
         apiResponse.setStatus(HttpStatus.CREATED.value());
         apiResponse.setData(file);
         return new ResponseEntity<>(apiResponse, HttpStatus.OK);
