@@ -38,6 +38,10 @@ public class AuthController {
         apiResponse.setData(loggedInUser);
         return new ResponseEntity<>(apiResponse, HttpStatus.OK);
     }
+    @GetMapping("/health")
+    public ResponseEntity<String> health() {
+        return ResponseEntity.ok("UP");
+}
 
 
 }
