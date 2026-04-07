@@ -2,9 +2,9 @@
 -- FILE TABLE
 -- ========================
 INSERT INTO file (id, image) VALUES
-                                 (10, 'img1'),
-                                 (11, 'img2'),
-                                 (12, 'img3');
+                                 (10, '/images/tk.jpg'),
+                                 (11, 'images/lik.jpg'),
+                                 (12, '/images/batman.jpg');
 
 -- ========================
 -- MOVIE TABLE
