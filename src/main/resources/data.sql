@@ -9,10 +9,10 @@ INSERT INTO file (id, image) VALUES
 -- ========================
 -- MOVIE TABLE
 -- ========================
-INSERT INTO movie (movie_id, movie_name, price, description, date, file_id) VALUES
-                                                                                (1, 'Doctor', 150, 'The theme highlights prevention over cure', '2024-01-01', 12),
-                                                                                (2, 'TK', 250, 'Focuses on women agency and family dynamics', '2022-10-01', 10),
-                                                                                (3, 'Batman', 200, 'Superhero movie', '2024-01-01', 11);
+INSERT INTO movie (movie_id, movie_name, price, description, date, image, file_id) VALUES
+                                                                                       (1, 'Doctor', 150, 'The theme highlights prevention over cure', '2024-01-01', '/images/doctor.jpg', 12),
+                                                                                       (2, 'TK', 250, 'Focuses on women agency and family dynamics', '2022-10-01', '/images/tk.jpg', 10),
+                                                                                       (3, 'Batman', 200, 'Superhero movie', '2024-01-01', '/images/batman.jpg', 11);
 
 -- ========================
 -- THEATRE TABLE
